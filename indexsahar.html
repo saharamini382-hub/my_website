@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahar Amini | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#07070d;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:'';
+position:fixed;
+width:600px;
+height:600px;
+background:#8b5cf6;
+filter:blur(250px);
+opacity:.2;
+top:-200px;
+right:-100px;
+z-index:-1;
+}
+
+body::after{
+content:'';
+position:fixed;
+width:500px;
+height:500px;
+background:#ec4899;
+filter:blur(250px);
+opacity:.15;
+bottom:-200px;
+left:-100px;
+z-index:-1;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:30px 10%;
+position:fixed;
+width:100%;
+backdrop-filter:blur(20px);
+background:rgba(0,0,0,.25);
+z-index:1000;
+}
+
+.logo{
+font-size:2rem;
+font-weight:700;
+color:#c084fc;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+nav a:hover{
+color:#c084fc;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:120px 10%;
+gap:80px;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero-text h1{
+font-size:5rem;
+line-height:1;
+margin-bottom:20px;
+}
+
+.hero-text span{
+color:#c084fc;
+}
+
+.hero-text p{
+font-size:1.1rem;
+color:#bdbdbd;
+line-height:1.8;
+margin-bottom:35px;
+}
+
+.btn{
+padding:15px 35px;
+border:none;
+border-radius:50px;
+background:linear-gradient(135deg,#8b5cf6,#ec4899);
+color:white;
+font-weight:600;
+cursor:pointer;
+text-decoration:none;
+box-shadow:0 0 25px rgba(192,132,252,.4);
+}
+
+.hero-image img{
+width:420px;
+border-radius:30px;
+border:1px solid rgba(255,255,255,.1);
+box-shadow:0 20px 60px rgba(0,0,0,.5);
+}
+
+section{
+padding:120px 10%;
+}
+
+.title{
+font-size:3rem;
+margin-bottom:50px;
+text-align:center;
+}
+
+.glass{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.08);
+border-radius:25px;
+padding:40px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.skill{
+text-align:center;
+padding:40px;
+transition:.3s;
+}
+
+.skill:hover{
+transform:translateY(-10px);
+}
+
+.contact{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.contact-box{
+padding:30px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:#999;
+}
+
+.fade{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:3.2rem;
+}
+
+.hero-image img{
+width:300px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="head_row">
+<div class="logo"><img src="/images/logo sahar.jpg" alt="" style="width: 80px;"></div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div class="hero-text">
+<h1>Sahar <span>Amini</span></h1>
+
+<p>
+Molecular Biology Student & Creative Professional.
+Passionate about science, beauty, innovation and creating impactful experiences.
+</p>
+
+<a href="#contact" class="btn">Contact Me</a>
+</div>
+
+<div class="hero-image">
+<img src="/images/portfolio-1.jpg" alt="Sahar Amini">
+</div>
+
+</section>
+
+<section id="about" class="fade">
+<h2 class="title">About Me</h2>
+
+<div class="glass">
+<p style="line-height:2;">
+Hello! I'm Sahar Amini.Welcome to my personal website.
+This platform serves as a space to introduce myself, showcase my work, and share my professional interests. Through the contact information provided on this website,
+I am available for research assistance, academic article research, professional and personal website development, and social media content creation. If you are interested in collaborating or have a project in mind, feel free to contact me.
+</p>
+</div>
+
+</section>
+
+<section id="skills" class="fade">
+
+<h2 class="title">My Skills</h2>
+
+<div class="skills">
+
+<div class="glass skill">
+<h3>Research</h3>
+</div>
+
+<div class="glass skill">
+<h3>website development</h3>
+</div>
+
+<div class="glass skill">
+<h3>Molecular Biology</h3>
+</div>
+
+
+<div class="glass skill">
+<h3>Communication</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="fade">
+
+<h2 class="title">Contact</h2>
+<div class="contact">
+
+<div class="glass contact-box">
+<h3>Email</h3>
+<p>saharamini382@gmail.com</p>
+</div>
+
+<div class="glass contact-box">
+<h3>Phone</h3>
+<p>+98 9140272349</p>
+</div>
+
+<div class="glass contact-box">
+<h3>Location</h3>
+<p>IRAN isfahan-tehran</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Sahar Amini. All Rights Reserved.
+</footer>
+
+<script>
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+});
+});
+
+document.querySelectorAll('.fade').forEach(el=>{
+observer.observe(el);
+});
+
+</script>
+
+</body>
+</html>
